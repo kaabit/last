@@ -3,9 +3,9 @@ node {
    git 'https://github.com/kaabit/last'
   }
   stage ('buld') {
-   sh echo 'building in process' 
+   echo 'building in process' 
   }
   stage ('test and deployement') {
-    sh echo 'testing in process'
+   echo 'testing in process'
   }
 }
