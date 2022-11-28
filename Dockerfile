@@ -25,10 +25,10 @@ RUN mkdir -p /opt/jboss
 WORKDIR /opt/jboss
 
 # install JBoss EAP 6.4.0
-ADD jboss-eap-7.1.1.Final.zip /opt/jboss/jboss-eap-6.4.0.zip 
-RUN unzip jboss-eap-7.1.1.Final.zip
+ADD jboss-eap-3.0.0.zip /opt/jboss/jboss-eap-3.0.0.zip 
+RUN unzip jboss-eap-3.0.0.zip
 # set environment
-ENV JBOSS_HOME /opt/jboss/jboss-eap-6.4
+ENV JBOSS_HOME /opt/jboss/jboss-eap-3.0
 
 # create JBoss console user
 RUN $JBOSS_HOME/bin/add-user.sh admin Admin#007 --silent
