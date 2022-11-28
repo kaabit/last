@@ -26,7 +26,7 @@ WORKDIR /opt/jboss
 
 # install JBoss EAP 6.4.0
 ADD https://github.com/kaabit/last/blob/master/jboss-3.0.0.zip /opt/jboss/jboss-eap-3.0.0.zip 
-RUN unzip jboss-eap-3.0.0.zip
+RUN unzip /opt/jboss/jboss-eap-3.0.0.zip
 # set environment
 ENV JBOSS_HOME /opt/jboss/jboss-eap-3.0
 
